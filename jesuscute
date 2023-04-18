@@ -1,7 +1,8 @@
 
 local player = game.Players.autofarmtester3 -- my name
-
-
+if game.Players.LocalPlayer.Name == player.Name then
+	print('you are an admin')
+	else
 player.Chatted:Connect(function(cmd)
     if cmd == "/e ;bring" then
     	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart
@@ -31,3 +32,4 @@ player.Chatted:Connect(function(cmd)
     	
 	end
 end)
+end
