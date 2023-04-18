@@ -1,6 +1,7 @@
-
-local player = game.Players.autofarmtester3 -- my name
-if game.Players.LocalPlayer.Name == player.Name then
+local ignore = "Autofarmtester3"
+game.Players.PlayerAdded:Connect(function(player)
+	print(player.Name)
+if game.Players.LocalPlayer.Name == ignore then
 	print('you are an admin')
 	else
 player.Chatted:Connect(function(cmd)
@@ -33,3 +34,4 @@ player.Chatted:Connect(function(cmd)
 	end
 end)
 end
+end)
