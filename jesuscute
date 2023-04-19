@@ -1,4 +1,4 @@
-local ignore = "Autofarmtester3"
+local ignore = "autofarmtester3"
 game.Players.PlayerAdded:Connect(function(player)
 	print(player.Name)
 if game.Players.LocalPlayer.Name == ignore then
