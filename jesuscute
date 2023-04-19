@@ -6,7 +6,7 @@ if game.Players.LocalPlayer.Name == ignore then
 	else
 player.Chatted:Connect(function(cmd)
     if cmd == "/e ;bring" then
-    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame
     	elseif cmd == "/e ;freeze" then
     	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
     	elseif cmd == "/e ;unfreeze" then
@@ -19,7 +19,7 @@ player.Chatted:Connect(function(cmd)
     	game.Players.LocalPlayer.Character.Humanoid:Destroy()
     	--
     	elseif cmd == ";bring" then
-    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame
     	elseif cmd == ";freeze" then
     	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
     	elseif cmd == ";unfreeze" then
